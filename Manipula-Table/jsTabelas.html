@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pizza</title>
+
+  <script type="text/javascript" src="jsTabelas.js"></script>
+  
+  <style>
+    #dfPessoas {
+      font: 14px Verdana, arial, helvetica;
+      margin-left: 35%;
+      margin-top: 150px;
+    }
+    #dtPessoas {
+      font: 14px Verdana, arial, helvetica;
+      margin-left: 25%;
+    }
+    table tr td {
+      width: 140px;
+    }
+  </style>
+
+</head>
+
+
+<body>
+  <div id="dfPessoas">
+    <form name="fPessoas">
+
+      <label>Nome</label><br/>
+      <input type="text" name="txtNome" /><br/><br/>
+      <label>Sobrenome</label><br/>
+      <input type="text" name="txtSobrenome" /><br/><br/>
+      <label>E-mail</label><br/>
+      <input type="text" name="txtEmail" /><br/><br/>
+      <label>Sexo</label><br/>
+      <input type="text" name="txtSexo" /><br/><br/>
+      <label>Profissão</label><br/>
+      <input type="text" name="txtProfissao" /><br/><br/>
+
+      <input type="button" value="Inserir" 
+        onclick="cadPessoa(txtNome.value, txtSobrenome.value, txtEmail.value, txtSexo.value, txtProfissao.value,)"
+      />
+      <input type="button" value="Adiciona" 
+        onclick="cadPessoa(txtNome.value, txtSobrenome.value, txtEmail.value, txtSexo.value, txtProfissao.value,)"
+      />
+      <input type="button" value="Excluir" 
+        onclick="cadPessoa(txtNome.value, txtSobrenome.value, txtEmail.value, txtSexo.value, txtProfissao.value,)"
+      />
+      
+    </form>
+  </div>
+
+  <br/><br/>
+
+  <div id="dtPessoas">
+    <table id="tbPessoas">
+      <thead>
+        <tr>
+          <td>Código</td>
+          <td>Nome</td>
+          <td>Sobrenome</td>
+          <td>Email</td>
+          <td>Sexo</td>
+          <td>Profissao</td>
+        </tr>
+      </thead>
+    </table>
+
+  </div>
+  
+</body>
+</html>
