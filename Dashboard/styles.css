@@ -1,0 +1,35 @@
+/* importando fonts do google apis */
+@import url('https://fonts.googleapis.com/css?family=Ubuntu:wight@300;400;500;700&display=swap');
+
+/* zerando toda a formatação da página */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Ubuntu', sans-serif;
+}
+/* criando variavel para cores */
+:root{
+  --blue: #287bff;
+  --white: #fff;
+  --grey: #f5f5f5;
+  --black1: #222;
+  --black2: #999;
+}
+/* corpo da pagina */
+body{
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+/* formatação da div-container */
+.container{
+  position: relative;
+  width: 100%;
+}
+/* formatação da div-navigation */
+.navigation{
+  position: fixed;
+  width: 300px;
+  height: 100%;
+  background: var(--blue)
+}
